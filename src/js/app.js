@@ -200,7 +200,7 @@ const menuTemplate = [
                     {
                         label: 'Emojies',
                         type: 'radio',
-                        checked: settings.get('startScreen') == 'emojies',
+                        checked: settings.get('startScreen') == 'emojies' || !settings.get('startScreen'),
                         click: function(){
                             settings.set('startScreen', 'emojies');
                         }
